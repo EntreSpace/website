@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>EntreSpace | Entrepreneur</title>
+    <link href="./assets/style/entrepreneur.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="/">
+            <img src="./assets/img/logo/logo.png" class="nav_logo" alt="entrespace logo" width="37.29">
+            <h1 class="nav_logo_name">EntreSpace</h1>
+        </a>
+        <div class="nav_links">
+            <a href="#" class="nav_about">About</a>
+            <a href="./careers.html">Career</a>
+            <a href="#">Contact</a>
+            <a href="#" class="nav_link_get_started">Get Started</a>
+        </div>
+        <ul class="nav_about_dropdown" id="nav_about_dropdown">
+            <li>Who are we?</li>
+            <li>Our Mission</li>
+            <li>Values</li>
+            <li>Over Services</li>
+            <li>Our approach</li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list nav_button"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </nav>
+    <section class="get_started_background"></section>
+    <div class="get_started_cross_one"></div>
+    <div class="get_started_cross_two"></div>
+    <div class="get_started_title">Are you an Investor or an Entrepreneur?</div>
+    <a href="./investors.html" class="get_started_investor_button">Investor</a>
+    <a href="./entrepreneur.html" class="get_started_entrepreneur_button">Entrepreneur</a>
+    <main class="entrepreneur_form">
+        <h2 class="entrepreneur_title">Entrepreneur</h2>
+        <form action="" autocomplete="off" id="entrepreneurs_form" name="entrepreneurs_form">
+            <label class="entrepreneur_name_label" for="name">Name</label>
+            <input class="entrepreneur_name_input" type="text" name="name" id="name" required
+                placeholder="Enter name" />
+            <label class="entrepreneur_email_label" for="email">Email</label>
+            <input class="entrepreneur_email_input" type="email" name="email" id="email" required
+                placeholder="Enter email" />
+            <label class="entrepreneur_phone_label" for="phone">Contact Number</label>
+            <input class="entrepreneur_phone_input" type="text" name="phone" id="phone" required
+                placeholder="Enter phone number" />
+            <label class="entrepreneur_address_label" for="address">Address</label>
+            <textarea class="entrepreneur_address_input" name="address" id="address" required
+                placeholder="Enter address"></textarea>
+            <label class="entrepreneur_stage_label" for="stage">At which stage is your business?</label>
+            <select class="entrepreneur_stage_input" name="stage" id="stage" required>
+                <option selected disabled>Select a stage</option>
+                <option value="ideation">Ideation</option>
+                <option value="existing">Existing</option>
+            </select>
+            <!-- Ideation -->
+            <label class="entrepreneur_idea_label" for="idea" id="idea_label">Describe your idea/product & what it will
+                do.</label>
+            <textarea class="entrepreneur_idea_input" name="idea" id="idea" required
+                placeholder="Enter idea"></textarea>
+
+            <label class="entrepreneur_service_ideation_label" for="service" id="entrepreneur_service_label">Service(s)
+                you are looking
+                for</label>
+
+            <label for="consultancy" class="entrepreneur_service_ideation_consultancy_label"
+                id="entrepreneur_service_ideation_consultancy_label">Consultancy</label>
+            <input type="checkbox" id="consultancy" name="consultancy" value="yes"
+                class="entrepreneur_service_ideation_consultancy">
+
+            <label for="marketing" class="entrepreneur_service_ideation_marketing_label"
+                id="entrepreneur_service_ideation_marketing_label">Marketing</label>
+            <input type="checkbox" id="marketing" name="marketing" value="yes"
+                class="entrepreneur_service_ideation_marketing">
+
+            <label for="legal" class="entrepreneur_service_ideation_legal_label"
+                id="entrepreneur_service_ideation_legal_label">Legal</label>
+            <input type="checkbox" id="legal" name="legal" value="yes" class="entrepreneur_service_ideation_legal">
+
+            <label for="technical_support" class="entrepreneur_service_ideation_tech_label"
+                id="entrepreneur_service_ideation_tech_label">Technical Support</label>
+            <input type="checkbox" id="technical_support" name="technical_support" value="yes"
+                class="entrepreneur_service_ideation_tech">
+
+            <label for="graphics" class="entrepreneur_service_ideation_graphics_label"
+                id="entrepreneur_service_ideation_graphics_label">Graphics</label>
+            <input type="checkbox" id="graphics" name="graphics" value="yes"
+                class="entrepreneur_service_ideation_graphics">
+
+            <label for="investment" class="entrepreneur_service_ideation_investment_label"
+                id="entrepreneur_service_ideation_investment_label">Investment</label>
+            <input type="checkbox" id="investment" name="investment" value="yes"
+                class="entrepreneur_service_ideation_investment">
+            <!-- Exiting -->
+            <label class="entrepreneur_company_name_label" for="company_name" id="company_name_label">Company
+                Name</label>
+            <input class="entrepreneur_company_name_input" type="text" name="company_name" id="company_name" required
+                placeholder="Enter company name" />
+            <label class="entrepreneur_company_url_label" for="company_url" id="company_url_label">Company
+                website/Social Media URL</label>
+            <input class="entrepreneur_company_url_input" type="text" name="company_url" id="company_url" required
+                placeholder="Enter company URL" />
+            <label class="entrepreneur_company_description_label" for="company_description"
+                id="company_description_label">Company Description</label>
+            <textarea class="entrepreneur_company_description_input" name="company_description" id="company_description"
+                required placeholder="Enter company description"></textarea>
+            <button id="entrepreneur_submit_form" class="entrepreneur_submit_form" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer_bottom_footer"></div>
+        <a href="/">
+            <img src="./assets/img/logo/logo.png" class="footer_logo" alt="">
+            <div class="footer_company_name">EntreSpace</div>
+        </a>
+        <p class="footer_copyright1">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="footer_copyright2">Lorem ipsum dolor sit amet consectetur</p>
+        <a href="https://www.facebook.com/Entrespace.in"><img src="./assets/img/social media/facebook.png"
+                class="footer_social_media_facebook" alt=""></a>
+        <a href="https://www.linkedin.com/company/entre-space/"><img src="./assets/img/social media/linkedin.png"
+                class="footer_social_media_linkedin" alt=""></a>
+        <a href="https://www.instagram.com/entre_space/"><img src="./assets/img/social media/instagram.png"
+                class="footer_social_media_instagram" alt=""></a>
+        <a href="mailto:connect@entrespace.in" class="footer_email">Email- connect@entrespace.in</a>
+        <p class="footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
+    </footer>
+    <footer class="mobile_footer">
+        <div class="mobile_footer_bottom_footer"></div>
+        <a href="/">
+            <img src="./assets/img/logo/logo.png" class="mobile_footer_logo" alt="">
+            <div class="mobile_footer_company_name">EntreSpace</div>
+        </a>
+        <p class="mobile_footer_copyright1">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="mobile_footer_copyright2">Lorem ipsum dolor sit amet consectetur</p>
+        <a href="https://www.facebook.com/Entrespace.in"><img src="./assets/img/social media/facebook.png"
+                class="mobile_footer_social_media_facebook" alt=""></a>
+        <a href="https://www.linkedin.com/company/entre-space/"><img src="./assets/img/social media/linkedin.png"
+                class="mobile_footer_social_media_linkedin" alt=""></a>
+        <a href="https://www.instagram.com/entre_space/"><img src="./assets/img/social media/instagram.png"
+                class="mobile_footer_social_media_instagram" alt=""></a>
+        <a href="mailto:connect@entrespace.in" class="mobile_footer_email">Email- connect@entrespace.in</a>
+        <p class="mobile_footer_privacy_policy">© EntreSpace 2021 All rights reserved. Privacy Policy</p>
+    </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxl5-qqlq2W0Z0SZkdd-iq-TcIYFDO-8xM13YtEzjEFg3oaBaZ6_wSHGzae_b1kKbvA/exec'
+        const form = document.forms['entrepreneurs_form']
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you for showing your interest! You will be contacted soon by our team."))
+                .catch(error => console.error(error.message))
+            document.getElementById("entrepreneurs_form").reset();
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./assets/script/entrepreneur.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
