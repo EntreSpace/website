@@ -92,3 +92,93 @@ $(document).on('keydown', function (event) {
         $('.get_started_entrepreneur_button').hide();
     }
 });
+
+
+function goToAboutSection(){
+    window.scroll({
+        top: window.innerHeight,
+        left: 0,
+        behavior: "smooth"
+    })
+    $dropdown.removeClass('nav_about_dropdown_visible');
+}
+function goToMissionSection(){
+    window.scroll({
+        top: window.innerHeight*1.5,
+        left: 0,
+        behavior: "smooth"
+    })
+    $dropdown.removeClass('nav_about_dropdown_visible');
+}
+function goToValueSection(){
+    window.scroll({
+        top: window.innerHeight*2-50,
+        left: 0,
+        behavior: "smooth"
+    })
+    $dropdown.removeClass('nav_about_dropdown_visible');
+}
+function goToServicesSection(){
+    if (window.innerWidth > 932){
+        window.scroll({
+            top: window.innerHeight*2.28,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    else if (window.innerWidth > 800){
+        window.scroll({
+            top: window.innerHeight*2.78,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
+    else if(window.innerWidth > 700){
+        window.scroll({
+            top: window.innerHeight*2.9,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
+    else if(window.innerWidth > 600){
+        window.scroll({
+            top: window.innerHeight*3,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
+   
+    $dropdown.removeClass('nav_about_dropdown_visible');
+}
+function goToApproachSection(){
+    if (window.innerWidth > 932){
+        window.scroll({
+            top: window.innerHeight*3,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    else{
+        window.scroll({
+            top: window.innerHeight*3.9,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+}
+function goToContactSection(){
+    if (window.innerWidth > 932){
+        window.scroll({
+            top: window.innerHeight*4.95,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    else{
+        window.scroll({
+            top: window.innerHeight*5.9,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+}
