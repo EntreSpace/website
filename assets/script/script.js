@@ -1,3 +1,12 @@
+//Dark mode css change warning
+if (navigator.userAgent.match(/samsung/i)) {
+    alert("You are using a defective browser (Samsung Internet) that " +
+        "might not be configured to display this website properly. " +
+        "You should consider using a proper standards-compliant " +
+        "browser instead. \n\n" +
+        "We recommend using Google Chrome, Firefox or Microsoft Edge.");
+}
+
 function showAboutDropdown() {
     document.getElementById("nav_about_dropdown").style.visibility = "visible";
 }
@@ -94,7 +103,7 @@ $(document).on('keydown', function (event) {
 });
 
 
-function goToAboutSection(){
+function goToAboutSection() {
     window.scroll({
         top: window.innerHeight,
         left: 0,
@@ -102,81 +111,81 @@ function goToAboutSection(){
     })
     $dropdown.removeClass('nav_about_dropdown_visible');
 }
-function goToMissionSection(){
+function goToMissionSection() {
     window.scroll({
-        top: window.innerHeight*1.5,
+        top: window.innerHeight * 1.5,
         left: 0,
         behavior: "smooth"
     })
     $dropdown.removeClass('nav_about_dropdown_visible');
 }
-function goToValueSection(){
+function goToValueSection() {
     window.scroll({
-        top: window.innerHeight*2-50,
+        top: window.innerHeight * 2 - 50,
         left: 0,
         behavior: "smooth"
     })
     $dropdown.removeClass('nav_about_dropdown_visible');
 }
-function goToServicesSection(){
-    if (window.innerWidth > 932){
+function goToServicesSection() {
+    if (window.innerWidth > 932) {
         window.scroll({
-            top: window.innerHeight*2.28,
+            top: window.innerHeight * 2.28,
             left: 0,
             behavior: "smooth"
         });
     }
-    else if (window.innerWidth > 800){
+    else if (window.innerWidth > 800) {
         window.scroll({
-            top: window.innerHeight*2.78,
+            top: window.innerHeight * 2.78,
             left: 0,
             behavior: "smooth"
         })
     }
-    else if(window.innerWidth > 700){
+    else if (window.innerWidth > 700) {
         window.scroll({
-            top: window.innerHeight*2.9,
+            top: window.innerHeight * 2.9,
             left: 0,
             behavior: "smooth"
         })
     }
-    else if(window.innerWidth > 600){
+    else if (window.innerWidth > 600) {
         window.scroll({
-            top: window.innerHeight*3,
+            top: window.innerHeight * 3,
             left: 0,
             behavior: "smooth"
         })
     }
-   
+
     $dropdown.removeClass('nav_about_dropdown_visible');
 }
-function goToApproachSection(){
-    if (window.innerWidth > 932){
+function goToApproachSection() {
+    if (window.innerWidth > 932) {
         window.scroll({
-            top: window.innerHeight*3,
+            top: window.innerHeight * 3,
             left: 0,
             behavior: "smooth"
         });
     }
-    else{
+    else {
         window.scroll({
-            top: window.innerHeight*3.9,
+            top: window.innerHeight * 3.9,
             left: 0,
             behavior: "smooth"
         });
     }
 }
-function goToContactSection(){
-    if (window.innerWidth > 932){
+function goToContactSection() {
+    if (window.innerWidth > 932) {
         window.scroll({
-            top: window.innerHeight*4.95,
+            top: window.innerHeight * 4.95,
             left: 0,
             behavior: "smooth"
         });
     }
-    else{
+    else {
         window.scroll({
-            top: window.innerHeight*5.9,
+            top: window.innerHeight * 5.9,
             left: 0,
             behavior: "smooth"
         });
