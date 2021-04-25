@@ -104,28 +104,55 @@ $(document).on('keydown', function (event) {
 
 
 function goToAboutSection() {
-    window.scroll({
-        top: window.innerHeight,
-        left: 0,
-        behavior: "smooth"
-    })
-    $dropdown.removeClass('nav_about_dropdown_visible');
+    if (window.innerWidth > 800) {
+        window.scroll({
+            top: window.innerHeight,
+            left: 0,
+            behavior: "smooth"
+        })
+        $dropdown.removeClass('nav_about_dropdown_visible');
+    }
+    else{
+        window.scroll({
+            top: window.innerHeight*0.74,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
 }
 function goToMissionSection() {
-    window.scroll({
-        top: window.innerHeight * 1.5,
-        left: 0,
-        behavior: "smooth"
-    })
-    $dropdown.removeClass('nav_about_dropdown_visible');
+    if (window.innerWidth > 800) {
+        window.scroll({
+            top: window.innerHeight * 1.5,
+            left: 0,
+            behavior: "smooth"
+        })
+        $dropdown.removeClass('nav_about_dropdown_visible');
+    }
+    else {
+        window.scroll({
+            top: window.innerHeight*1.1,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
 }
 function goToValueSection() {
-    window.scroll({
-        top: window.innerHeight * 2 - 50,
-        left: 0,
-        behavior: "smooth"
-    })
-    $dropdown.removeClass('nav_about_dropdown_visible');
+    if (window.innerWidth > 800) {
+        window.scroll({
+            top: window.innerHeight * 1.9,
+            left: 0,
+            behavior: "smooth"
+        });
+        $dropdown.removeClass('nav_about_dropdown_visible');
+    }
+    else {
+        window.scroll({
+            top: window.innerHeight * 1.6,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
 }
 function goToServicesSection() {
     if (window.innerWidth > 932) {
@@ -137,26 +164,32 @@ function goToServicesSection() {
     }
     else if (window.innerWidth > 800) {
         window.scroll({
-            top: window.innerHeight * 2.78,
+            top: window.innerHeight * 2.7,
             left: 0,
             behavior: "smooth"
-        })
+        });
     }
     else if (window.innerWidth > 700) {
+        window.scroll({
+            top: window.innerHeight * 2.55,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    else if (window.innerWidth > 500) {
+        window.scroll({
+            top: window.innerHeight * 2.7,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    else {
         window.scroll({
             top: window.innerHeight * 2.9,
             left: 0,
             behavior: "smooth"
-        })
+        });
     }
-    else if (window.innerWidth > 600) {
-        window.scroll({
-            top: window.innerHeight * 3,
-            left: 0,
-            behavior: "smooth"
-        })
-    }
-
     $dropdown.removeClass('nav_about_dropdown_visible');
 }
 function goToApproachSection() {
@@ -167,13 +200,21 @@ function goToApproachSection() {
             behavior: "smooth"
         });
     }
-    else {
+    else if (window.innerWidth > 800) {
         window.scroll({
             top: window.innerHeight * 3.9,
             left: 0,
             behavior: "smooth"
         });
     }
+    else {
+        window.scroll({
+            top: window.innerHeight * 3.6,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    
 }
 function goToContactSection() {
     if (window.innerWidth > 932) {
