@@ -7,6 +7,14 @@ if (navigator.userAgent.match(/samsung/i)) {
         "We recommend using Google Chrome, Firefox or Microsoft Edge.");
 }
 
+function goToCareer(){
+    window.location.href = 'careers.html';
+}
+function removeCareer(){
+    if(window.innerWidth>800){
+        $('.nav_about_dropdown_career').hide();
+    }
+}
 function showAboutDropdown() {
     document.getElementById("nav_about_dropdown").style.visibility = "visible";
 }
@@ -25,9 +33,10 @@ $('.nav_about').on('click', () => {
 });
 $('.nav_button').on('click', () => {
     $dropdown.toggleClass('nav_about_dropdown_mobile');
+    $('.nav_about_dropdown_career').show();
 });
 
-// Get startdet popup
+// Get started popup
 const $cross1 = $('.get_started_cross_one');
 const $cross2 = $('.get_started_cross_two');
 $(document).mouseover(e => {

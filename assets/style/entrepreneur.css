@@ -65,15 +65,21 @@
   visibility: visible;
 }
 .nav_about_dropdown li {
+  line-height: 19px;
+  padding: 8px 0px 8px 13px;
+  color: #ffffff;
+}
+.nav_about_dropdown li>a {
+  text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  padding: 8px 0px 8px 13px;
+  color: inherit;
+  width: 100%;
+  display: block;
 }
-.nav_about_dropdown li:hover {
+.nav_about_dropdown li:hover  {
   background: #ffffff;
   cursor: pointer;
   color: #1175bc;
@@ -99,7 +105,7 @@
   .nav_about_dropdown_mobile {
     visibility: visible;
     position: absolute;
-    height: 220px;
+    height: 130px;
     width: 100%;
     right: 0px;
     top: 72px;

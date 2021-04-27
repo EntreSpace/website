@@ -32,7 +32,7 @@
     <link href="./assets/style/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onresize="removeCareer()">
     <nav class="nav">
         <a href="#">
             <img src="./assets/img/logo/logo.png" class="nav_logo" alt="entrespace logo" width="37.29">
@@ -47,6 +47,7 @@
         <ul class="nav_about_dropdown" id="nav_about_dropdown">
             <li onclick="goToAboutSection()">Who are we?</li>
             <li onclick="goToMissionSection()">Our Mission</li>
+            <li onclick="goToCareer()" class="nav_about_dropdown_career">Career</li>
             <li onclick="goToValueSection()">Values</li>
             <li onclick="goToServicesSection()">Over Services</li>
             <li onclick="goToApproachSection()">Our approach</li>
@@ -128,7 +129,7 @@
         <img src="./assets/img/approach/process_potrait.png" class="achievements_process" alt="">
         <img src="./assets/img/approach/process.png" class="achievements_process_landscape" alt="">
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact_large_circle_blue"></div>
         <div class="contact_small_circle_ornage"></div>
         <h2 class="contact_get_in_touch">Get in Touch</h2>
@@ -155,7 +156,7 @@
         <h2 class="contact_social_media">Social Media Following</h2>
         <div class="contact_social_media_circle">10k+</div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer_small_circle_ornage"></div>
         <h2 class="footer_get_in_touch">Get in Touch</h2>
         <img src="./assets/img/contact/mail.png" class="footer_mail_icon" alt="">
