@@ -7,11 +7,11 @@ if (navigator.userAgent.match(/samsung/i)) {
         "We recommend using Google Chrome, Firefox or Microsoft Edge.");
 }
 
-function goToCareer(){
+function goToCareer() {
     window.location.href = 'careers.html';
 }
-function removeCareer(){
-    if(window.innerWidth>800){
+function removeCareer() {
+    if (window.innerWidth > 800) {
         $('.nav_about_dropdown_career').hide();
     }
 }
@@ -121,9 +121,9 @@ function goToAboutSection() {
         })
         $dropdown.removeClass('nav_about_dropdown_visible');
     }
-    else{
+    else {
         window.scroll({
-            top: window.innerHeight*0.74,
+            top: window.innerHeight * 0.74,
             left: 0,
             behavior: "smooth"
         })
@@ -140,7 +140,7 @@ function goToMissionSection() {
     }
     else {
         window.scroll({
-            top: window.innerHeight*1.1,
+            top: window.innerHeight * 1.1,
             left: 0,
             behavior: "smooth"
         })
@@ -223,7 +223,7 @@ function goToApproachSection() {
             behavior: "smooth"
         });
     }
-    
+
 }
 function goToContactSection() {
     if (window.innerWidth > 932) {
