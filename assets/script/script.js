@@ -13,6 +13,7 @@ function goToCareer() {
 function removeCareer() {
     if (window.innerWidth > 800) {
         $('.nav_about_dropdown_career').hide();
+        $('.nav_about_dropdown').removeClass('nav_about_dropdown_visible');
     }
 }
 function showAboutDropdown() {
