@@ -4,21 +4,9 @@ if (navigator.userAgent.match(/samsung/i)) {
         "might not be configured to display this website properly. " +
         "You should consider using a proper standards-compliant " +
         "browser instead. \n\n" +
-        "We recommend using Google Chrome, Firefox or Microsoft Edge.");
+        "We recommend using Google Chrome, Firefox or Microsoft Edge.\n\n"+
+        "Also, if enabled, please disable dark mode to view the website in it's original theme");
 }
-
-if (window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    alert("Please disable dark mode to view the website in it's original theme")
-}
-
-window.matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', event => {
-        if (event.matches) {
-            alert("Please disable dark mode to view the website in it's original theme")
-        }
-    })
-
 
 function goToCareer() {
     window.location.href = 'careers.html';
