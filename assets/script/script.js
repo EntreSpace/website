@@ -1,4 +1,4 @@
-//Dark mode css change warning
+//Samsung internet users
 if (navigator.userAgent.match(/samsung/i)) {
     alert("You are using a defective browser (Samsung Internet) that " +
         "might not be configured to display this website properly. " +
