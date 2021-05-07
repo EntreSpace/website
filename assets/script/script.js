@@ -7,6 +7,14 @@ if (navigator.userAgent.match(/samsung/i)) {
         "We recommend using Google Chrome, Firefox or Microsoft Edge.");
 }
 
+window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', event => {
+  if (event.matches) {
+    alert("Please disable dark mode to view the website in it's original theme")
+  }
+})
+
+
 function goToCareer() {
     window.location.href = 'careers.html';
 }
