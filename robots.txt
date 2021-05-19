@@ -2,3 +2,5 @@ User-Agent: *
 Disallow: 
 
 Sitemap: https://entrespace.in/careers.html
+Sitemap: https://entrespace.in/investors.html
+Sitemap: https://entrespace.in/entrepreneur.html
